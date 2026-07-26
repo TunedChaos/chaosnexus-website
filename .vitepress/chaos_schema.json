@@ -1,0 +1,1229 @@
+{
+  "meta": {
+    "generated_at": "2026-06-29T04:24:21.654735119+00:00",
+    "version": "0.1.0"
+  },
+  "modules": {
+    "global": {
+      "description": "Global ChaosNexus Anvil engine functions available to every Rhai plugin without an explicit import.",
+      "functions": [
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/assert",
+          "name": "assert",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "bool"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "assert(_: bool, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/base64_decode",
+          "name": "base64_decode",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "base64_decode(_: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/base64_encode",
+          "name": "base64_encode",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "string",
+          "signature": "base64_encode(_: string) -> string"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/call_native",
+          "name": "call_native",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "array"
+            }
+          ],
+          "return_type": "core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "call_native(_: string, _: array) -> core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/create_event",
+          "name": "create_event",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "create_event(_: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/create_timer",
+          "name": "create_timer",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "i64"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "bool"
+            },
+            {
+              "description": "",
+              "name": "arg3",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg4",
+              "type": "types::dynamic::Dynamic"
+            }
+          ],
+          "return_type": "()",
+          "signature": "create_timer(_: string, _: i64, _: bool, _: string, _: types::dynamic::Dynamic)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/db_connect",
+          "name": "db_connect",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "db_connect(_: string, _: string, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/db_execute",
+          "name": "db_execute",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "array"
+            }
+          ],
+          "return_type": "core::result::Result<i64,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "db_execute(_: string, _: string, _: array) -> core::result::Result<i64,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/db_query",
+          "name": "db_query",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "array"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::vec::Vec<rhai::types::dynamic::Dynamic>,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "db_query(_: string, _: string, _: array) -> core::result::Result<alloc::vec::Vec<rhai::types::dynamic::Dynamic>,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/fire_event",
+          "name": "fire_event",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "types::dynamic::Dynamic"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "fire_event(_: string, _: types::dynamic::Dynamic) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/from_json",
+          "name": "from_json",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "from_json(_: string) -> core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/fs_append",
+          "name": "fs_append",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "fs_append(_: string, _: string, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/fs_delete",
+          "name": "fs_delete",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "fs_delete(_: string, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/fs_exists",
+          "name": "fs_exists",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<bool,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "fs_exists(_: string, _: string) -> core::result::Result<bool,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/fs_list_dir",
+          "name": "fs_list_dir",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::vec::Vec<rhai::types::dynamic::Dynamic>,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "fs_list_dir(_: string, _: string) -> core::result::Result<alloc::vec::Vec<rhai::types::dynamic::Dynamic>,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/fs_read",
+          "name": "fs_read",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "fs_read(_: string, _: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/fs_write",
+          "name": "fs_write",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "fs_write(_: string, _: string, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/get_cvar",
+          "name": "get_cvar",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "string",
+          "signature": "get_cvar(_: string) -> string"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/get_env",
+          "name": "get_env",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "string",
+          "signature": "get_env(_: string) -> string"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/get_global",
+          "name": "get_global",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "types::dynamic::Dynamic",
+          "signature": "get_global(_: string) -> types::dynamic::Dynamic"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/hmac_sha256",
+          "name": "hmac_sha256",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "hmac_sha256(_: string, _: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/hook_event",
+          "name": "hook_event",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "hook_event(_: string, _: string, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/http_get",
+          "name": "http_get",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "http_get(_: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/http_post",
+          "name": "http_post",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "http_post(_: string, _: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/json_extract",
+          "name": "json_extract",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "json_extract(_: string, _: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/kv_dump",
+          "name": "kv_dump",
+          "parameters": [],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "kv_dump() -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/kv_get",
+          "name": "kv_get",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "kv_get(_: string) -> core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/kv_set",
+          "name": "kv_set",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "kv_set(_: string, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/load_config",
+          "name": "load_config",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "load_config(_: string, _: string) -> core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/load_config_string",
+          "name": "load_config_string",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "load_config_string(_: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/log_debug",
+          "name": "log_debug",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "()",
+          "signature": "log_debug(_: string, _: string)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/log_error",
+          "name": "log_error",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "()",
+          "signature": "log_error(_: string, _: string)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/log_info",
+          "name": "log_info",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "()",
+          "signature": "log_info(_: string, _: string)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/mcp_call_tool",
+          "name": "mcp_call_tool",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "map"
+            }
+          ],
+          "return_type": "core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "mcp_call_tool(_: string, _: string, _: map) -> core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/mcp_connect",
+          "name": "mcp_connect",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg3",
+              "type": "array"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "mcp_connect(_: string, _: string, _: string, _: array) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/mcp_disconnect",
+          "name": "mcp_disconnect",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "mcp_disconnect(_: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/mcp_list_tools",
+          "name": "mcp_list_tools",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "mcp_list_tools(_: string) -> core::result::Result<rhai::types::dynamic::Dynamic,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/mcp_log",
+          "name": "mcp_log",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            }
+          ],
+          "return_type": "()",
+          "signature": "mcp_log(_: string, _: string, _: string)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/mcp_read_resource",
+          "name": "mcp_read_resource",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "mcp_read_resource(_: string, _: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/md5",
+          "name": "md5",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "string",
+          "signature": "md5(_: string) -> string"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/ntp_request",
+          "name": "ntp_request",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "i64"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "ntp_request(_: string, _: i64) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/regex_match",
+          "name": "regex_match",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::vec::Vec<rhai::types::dynamic::Dynamic>,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "regex_match(_: string, _: string) -> core::result::Result<alloc::vec::Vec<rhai::types::dynamic::Dynamic>,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/regex_replace",
+          "name": "regex_replace",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "regex_replace(_: string, _: string, _: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/register_cvar",
+          "name": "register_cvar",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg3",
+              "type": "string"
+            }
+          ],
+          "return_type": "()",
+          "signature": "register_cvar(_: string, _: string, _: string, _: string)"
+        },
+        {
+          "description": "Registers a new prompt template on this MCP server.",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/register_mcp_prompt",
+          "name": "register_mcp_prompt",
+          "parameters": [
+            {
+              "description": "The internal name of the plugin registering the prompt.",
+              "name": "plugin_name",
+              "type": "&str"
+            },
+            {
+              "description": "The unique name of the prompt template.",
+              "name": "prompt_name",
+              "type": "&str"
+            },
+            {
+              "description": "A description of what the prompt provides.",
+              "name": "desc",
+              "type": "&str"
+            },
+            {
+              "description": "A JSON string representing an array of PromptArgument objects (or an empty array/string).",
+              "name": "args_json",
+              "type": "&str"
+            }
+          ],
+          "return_type": "Result<(),Box<rhai::EvalAltResult>>",
+          "signature": "register_mcp_prompt(plugin_name: &str, prompt_name: &str, desc: &str, args_json: &str) -> Result<(),Box<rhai::EvalAltResult>>"
+        },
+        {
+          "description": "Registers a new resource on this MCP server.",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/register_mcp_resource",
+          "name": "register_mcp_resource",
+          "parameters": [
+            {
+              "description": "The internal name of the plugin registering the resource.",
+              "name": "plugin_name",
+              "type": "&str"
+            },
+            {
+              "description": "The human-readable name of the resource.",
+              "name": "resource_name",
+              "type": "&str"
+            },
+            {
+              "description": "The unique URI identifying the resource (e.g., `file:///path`).",
+              "name": "uri",
+              "type": "&str"
+            },
+            {
+              "description": "A description of the resource's contents.",
+              "name": "desc",
+              "type": "&str"
+            }
+          ],
+          "return_type": "Result<(),Box<rhai::EvalAltResult>>",
+          "signature": "register_mcp_resource(plugin_name: &str, resource_name: &str, uri: &str, desc: &str) -> Result<(),Box<rhai::EvalAltResult>>"
+        },
+        {
+          "description": "Registers a new tool on this MCP server.",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/register_mcp_tool",
+          "name": "register_mcp_tool",
+          "parameters": [
+            {
+              "description": "The internal name of the plugin registering the tool.",
+              "name": "plugin_name",
+              "type": "&str"
+            },
+            {
+              "description": "The unique name of the tool exposed to clients.",
+              "name": "tool_name",
+              "type": "&str"
+            },
+            {
+              "description": "A human-readable description of what the tool does.",
+              "name": "desc",
+              "type": "&str"
+            },
+            {
+              "description": "A JSON string representing the JSON Schema for the tool's input arguments.",
+              "name": "schema_json",
+              "type": "&str"
+            }
+          ],
+          "return_type": "Result<(),Box<rhai::EvalAltResult>>",
+          "signature": "register_mcp_tool(plugin_name: &str, tool_name: &str, desc: &str, schema_json: &str) -> Result<(),Box<rhai::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/register_native",
+          "name": "register_native",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            }
+          ],
+          "return_type": "()",
+          "signature": "register_native(_: string, _: string, _: string)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/route_webhook",
+          "name": "route_webhook",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "i64"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg3",
+              "type": "string"
+            }
+          ],
+          "return_type": "()",
+          "signature": "route_webhook(_: string, _: i64, _: string, _: string)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/run_command",
+          "name": "run_command",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "run_command(_: string, _: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/set_global",
+          "name": "set_global",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "types::dynamic::Dynamic"
+            }
+          ],
+          "return_type": "()",
+          "signature": "set_global(_: string, _: types::dynamic::Dynamic)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/sha256",
+          "name": "sha256",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "string",
+          "signature": "sha256(_: string) -> string"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/sleep",
+          "name": "sleep",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "i64"
+            }
+          ],
+          "return_type": "()",
+          "signature": "sleep(_: i64)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/start_webhook_server",
+          "name": "start_webhook_server",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "i64"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "start_webhook_server(_: string, _: i64) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/sys_install_plugin",
+          "name": "sys_install_plugin",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg3",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "sys_install_plugin(_: string, _: string, _: string, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/sys_os",
+          "name": "sys_os",
+          "parameters": [],
+          "return_type": "string",
+          "signature": "sys_os() -> string"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/system_time",
+          "name": "system_time",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "system_time(_: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/tcp_request",
+          "name": "tcp_request",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "tcp_request(_: string, _: string) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/to_json",
+          "name": "to_json",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "types::dynamic::Dynamic"
+            }
+          ],
+          "return_type": "core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "to_json(_: types::dynamic::Dynamic) -> core::result::Result<alloc::string::String,alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/translate",
+          "name": "translate",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg3",
+              "type": "array"
+            }
+          ],
+          "return_type": "string",
+          "signature": "translate(_: string, _: string, _: string, _: array) -> string"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/ws_close",
+          "name": "ws_close",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            }
+          ],
+          "return_type": "()",
+          "signature": "ws_close(_: string)"
+        },
+        {
+          "description": "",
+          "docs_url": "https://chaosnexus.ai/api/rhai/global/ws_connect",
+          "name": "ws_connect",
+          "parameters": [
+            {
+              "description": "",
+              "name": "arg0",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg1",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "arg2",
+              "type": "string"
+            }
+          ],
+          "return_type": "core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>",
+          "signature": "ws_connect(_: string, _: string, _: string) -> core::result::Result<(),alloc::boxed::Box<rhai::types::error::EvalAltResult>>"
+        }
+      ]
+    }
+  }
+}
