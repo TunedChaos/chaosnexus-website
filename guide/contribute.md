@@ -9,7 +9,7 @@ description: "Where and how to contribute to ChaosNexus"
 
 | Platform | Role |
 |----------|------|
-| **[GitHub / TunedChaos](https://github.com/TunedChaos)** | **Primary public host** — open issues and pull requests here |
+| **[GitHub / TunedChaos](https://github.com/TunedChaos)** | **Primary public host** - open issues and pull requests here |
 | [GitHub Sponsors](https://github.com/sponsors/TunedChaos) | Support the project |
 
 Full topology: [Repository architecture](/REPOSITORY_ARCHITECTURE).
@@ -22,10 +22,10 @@ Contribute against these **public** GitHub repositories:
 - [chaosnexus-forge](https://github.com/TunedChaos/chaosnexus-forge)
 - [chaosnexus-website](https://github.com/TunedChaos/chaosnexus-website)
 - [chaosnexus-codex](https://github.com/TunedChaos/chaosnexus-codex)
-- [chaosnexus-crucible](https://github.com/TunedChaos/chaosnexus-crucible) — local LLM **interface** (not model weights). Docs: [About Crucible](/guide/chaosnexus-crucible/about)
-- [chaosnexus-scripts](https://github.com/TunedChaos/chaosnexus-scripts) — shared Rhai plugins/libs. Docs: [About Scripts](/guide/chaosnexus-scripts/about)
-- [chaosnexus-tuned](https://github.com/TunedChaos/chaosnexus-tuned) — dataset generation, eval, and fine-tuning pipeline (weights stay out of git; adapter on [Hugging Face](https://huggingface.co/TunedChaos/ChaosNexus_Tuned_v1))
-- [chaosnexus-suite](https://github.com/TunedChaos/chaosnexus-suite) — Suite packaging and Release landing
+- [chaosnexus-crucible](https://github.com/TunedChaos/chaosnexus-crucible) - local LLM **interface** (not model weights). Docs: [About Crucible](/guide/chaosnexus-crucible/about)
+- [chaosnexus-scripts](https://github.com/TunedChaos/chaosnexus-scripts) - shared Rhai plugins/libs. Docs: [About Scripts](/guide/chaosnexus-scripts/about)
+- [chaosnexus-tuned](https://github.com/TunedChaos/chaosnexus-tuned) - dataset generation, eval, and fine-tuning pipeline (weights stay out of git; adapter on [Hugging Face](https://huggingface.co/TunedChaos/ChaosNexus_Tuned_v1))
+- [chaosnexus-suite](https://github.com/TunedChaos/chaosnexus-suite) - Suite packaging and Release landing
 
 Model weights: [TunedChaos/ChaosNexus_Tuned_v1](https://huggingface.co/TunedChaos/ChaosNexus_Tuned_v1) (PEFT / LoRA on Granite 4.1-8B).
 
