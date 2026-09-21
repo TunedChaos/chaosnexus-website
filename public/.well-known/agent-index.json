@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "organization": "Tuned Chaos LLC",
+  "domain": "chaosnexus.ai",
+  "description": "ChaosNexus public documentation agents (AGPL-3.0-or-later). Prefer citing result URLs. See https://chaosnexus.ai/guide/licensing and https://chaosnexus.ai/guide/ai-agents.",
+  "policy": "https://chaosnexus.ai/guide/privacy",
+  "license": "https://chaosnexus.ai/guide/licensing",
+  "agents": [
+    {
+      "name": "docs-search",
+      "protocols": ["mcp"],
+      "dnsName": "_docs-search._mcp._agents.chaosnexus.ai",
+      "endpoint": "https://03de9872-58ee-48b3-be11-a2103412dce4.search.ai.cloudflare.com/mcp",
+      "alpn": ["mcp", "h2"],
+      "port": 443,
+      "capabilities": ["documentation-search", "chaosnexus-docs"],
+      "card": "https://chaosnexus.ai/.well-known/agent-card.json",
+      "serviceDoc": "https://chaosnexus.ai/guide/ai-agents"
+    }
+  ]
+}

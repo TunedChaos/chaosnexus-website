@@ -1,0 +1,67 @@
+# chaosnexus-website/public/_headers
+# Cloudflare Pages custom headers (copied into .vitepress/dist on build).
+# RFC 8288 Link relations for agent discovery (isitagentready.com / RFC 9727).
+
+/
+  Link: </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json", </.well-known/agent-index.json>; rel="describedby"; type="application/json"; title="DNS-AID HTTP agent index", </.well-known/mcp/server-card.json>; rel="describedby"; type="application/json"; title="MCP Server Card", </.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"; title="Agent Skills discovery index", </.well-known/http-message-signatures-directory>; rel="describedby"; type="application/http-message-signatures-directory+json"; title="Web Bot Auth key directory", </.well-known/oauth-protected-resource>; rel="oauth-protected-resource"; type="application/json", </auth.md>; rel="describedby"; type="text/markdown"; title="Agent authentication", </llms.txt>; rel="describedby"; type="text/plain"; title="LLM documentation index", </api/rhai/>; rel="service-doc"; type="text/html"; title="Rhai API reference", </guide/ai-agents>; rel="service-doc"; type="text/html"; title="AI agent guide", </sitemap.xml>; rel="describedby"; type="application/xml"; title="Sitemap", </guide/licensing>; rel="license"; type="text/html"
+
+/index.html
+  Link: </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json", </.well-known/agent-index.json>; rel="describedby"; type="application/json"; title="DNS-AID HTTP agent index", </.well-known/mcp/server-card.json>; rel="describedby"; type="application/json"; title="MCP Server Card", </.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"; title="Agent Skills discovery index", </.well-known/http-message-signatures-directory>; rel="describedby"; type="application/http-message-signatures-directory+json"; title="Web Bot Auth key directory", </.well-known/oauth-protected-resource>; rel="oauth-protected-resource"; type="application/json", </auth.md>; rel="describedby"; type="text/markdown"; title="Agent authentication", </llms.txt>; rel="describedby"; type="text/plain"; title="LLM documentation index", </api/rhai/>; rel="service-doc"; type="text/html"; title="Rhai API reference", </guide/ai-agents>; rel="service-doc"; type="text/html"; title="AI agent guide", </sitemap.xml>; rel="describedby"; type="application/xml"; title="Sitemap", </guide/licensing>; rel="license"; type="text/html"
+
+/.well-known/api-catalog
+  Content-Type: application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"
+  Access-Control-Allow-Origin: *
+
+/.well-known/agent-index.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+/.well-known/agent-card.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+/.well-known/mcp/server-card.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET
+  Cache-Control: public, max-age=3600
+
+/.well-known/oauth-authorization-server
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+/.well-known/openid-configuration
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+/.well-known/oauth-protected-resource
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+/.well-known/jwks.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+/.well-known/http-message-signatures-directory
+  Content-Type: application/http-message-signatures-directory+json
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET
+  Cache-Control: public, max-age=86400
+
+/.well-known/agent-skills/index.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET
+  Cache-Control: public, max-age=3600
+
+/.well-known/agent-skills/agent-auth/SKILL.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/.well-known/agent-skills/docs-search/SKILL.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/auth.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *

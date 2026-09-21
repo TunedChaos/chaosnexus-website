@@ -1,0 +1,8 @@
+{
+  "resource": "https://chaosnexus.ai/",
+  "authorization_servers": ["https://chaosnexus.ai"],
+  "scopes_supported": ["docs:read", "search:read"],
+  "bearer_methods_supported": ["header"],
+  "resource_documentation": "https://chaosnexus.ai/auth.md",
+  "resource_signing_alg_values_supported": []
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "agent-auth",
+      "type": "skill-md",
+      "description": "Discover ChaosNexus agent authentication via auth.md and OAuth/OIDC well-known metadata. Use when connecting to chaosnexus.ai docs or MCP and you need to know whether Bearer tokens are required.",
+      "url": "/.well-known/agent-skills/agent-auth/SKILL.md",
+      "digest": "sha256:690e66d5ad477854f16783683eb94747d954249c30fefb96110ff6c37d4533bb"
+    },
+    {
+      "name": "docs-search",
+      "type": "skill-md",
+      "description": "Search ChaosNexus documentation via Cloudflare AI Search MCP, llms.txt, and the MCP Server Card. Use when answering questions about Anvil, Forge, Codex, Crucible, Rhai, or ChaosNexus licensing.",
+      "url": "/.well-known/agent-skills/docs-search/SKILL.md",
+      "digest": "sha256:7ac20f64c6694e3ab942ca5389499f0f874b601a0258a9c38f1dba6197e623d9"
+    }
+  ]
+}

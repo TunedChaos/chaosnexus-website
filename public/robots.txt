@@ -1,0 +1,11 @@
+# ChaosNexus documentation (https://chaosnexus.ai)
+# Licensed under AGPL-3.0-or-later. Contributor dual-license grant applies
+# to code contributions. See https://chaosnexus.ai/guide/licensing
+#
+# Open for general and AI crawlers (including Cloudflare-AI-Search).
+# Prefer /llms.txt for machine-readable discovery.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://chaosnexus.ai/sitemap.xml

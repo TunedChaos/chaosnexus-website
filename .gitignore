@@ -1,0 +1,7 @@
+# chaosnexus-website/.gitignore
+.vitepress/dist/
+.vitepress/cache/
+.obsidian/
+node_modules/
+*.log
+.DS_Store
