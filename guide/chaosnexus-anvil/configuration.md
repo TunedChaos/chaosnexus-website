@@ -43,4 +43,4 @@ API_TOKEN = "MY_API_TOKEN"
 - **Shell**: Prefer `run_command(exec, args)` (argv). The legacy `run_command(shell, command)` `-c` path is disabled unless `CHAOSNEXUS_ANVIL_ALLOW_SHELL_C=1`.
 - **Secrets**: Host TOML must not embed secret material. Use `env_allowlist` and/or `[plugins.<name>.secrets]` where values are **env var names** resolved at runtime.
 
-Legacy `[plugin_permissions.*]` blocks are **ignored** by the loader — migrate them to `[plugins.<name>]`.
+Legacy `[plugin_permissions.*]` blocks are **ignored** by the loader - migrate them to `[plugins.<name>]`.
