@@ -17,7 +17,7 @@ In-process Rhai limits cannot contain `run_command` or `mcp_connect`. Use OS-lev
 
 On Linux, Anvil applies **Landlock** at startup (`scripting/sandbox.rs`) after creating the scripts layout. The process may read/write under `scripts_root` (including `plugins/`, `lib/`, `data/`, `.pending/`) and gets read-only access to essential system paths (`/usr`, `/lib*`, `/etc`, `/dev`, `/proc`, …) plus `/tmp` so TLS and the dynamic linker keep working. The rest of the filesystem (including arbitrary `$HOME` paths outside `scripts_root`) is denied.
 
-Set `CHAOSNEXUS_ANVIL_DISABLE_LANDLOCK=1` to skip (legacy alias: `CHAOSWRENCH_DISABLE_LANDLOCK`). If the kernel lacks Landlock or ruleset creation fails, Anvil currently **continues unsandboxed** (fail-open) after logging — production MCP hosts should treat a non-`Applied` status as a deploy error until a `--require-landlock` flag exists. Landlock does **not** replace capability gates for `run_command` / network — combine with systemd/`NoNewPrivileges` and deny-by-default host grants.
+Set `CHAOSNEXUS_ANVIL_DISABLE_LANDLOCK=1` to skip (legacy alias: `CHAOSWRENCH_DISABLE_LANDLOCK`). If the kernel lacks Landlock or ruleset creation fails, Anvil currently **continues unsandboxed** (fail-open) after logging - production MCP hosts should treat a non-`Applied` status as a deploy error until a `--require-landlock` flag exists. Landlock does **not** replace capability gates for `run_command` / network - combine with systemd/`NoNewPrivileges` and deny-by-default host grants.
 
 ## Container
 
