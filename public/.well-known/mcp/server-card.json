@@ -1,0 +1,19 @@
+{
+  "serverInfo": {
+    "name": "ChaosNexus docs search",
+    "version": "1.0.0"
+  },
+  "description": "Search ChaosNexus documentation (chaosnexus.ai) via Cloudflare AI Search MCP. Content is AGPL-3.0-or-later; code contributions use Tuned Chaos contributor dual-license grant.",
+  "url": "https://03de9872-58ee-48b3-be11-a2103412dce4.search.ai.cloudflare.com/mcp",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://03de9872-58ee-48b3-be11-a2103412dce4.search.ai.cloudflare.com/mcp"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": false,
+    "prompts": false
+  },
+  "websiteUrl": "https://chaosnexus.ai/guide/ai-agents",
+  "documentationUrl": "https://chaosnexus.ai/guide/ai-agents"
+}

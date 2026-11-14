@@ -1,0 +1,117 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://chaosnexus.ai/api/rhai/",
+      "service-doc": [
+        {
+          "href": "https://chaosnexus.ai/api/rhai/",
+          "type": "text/html",
+          "title": "ChaosNexus Rhai API reference (human-readable)"
+        },
+        {
+          "href": "https://chaosnexus.ai/guide/chaosnexus-anvil/rhai-api",
+          "type": "text/html",
+          "title": "Anvil Rhai API guide"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://chaosnexus.ai/llms.txt",
+          "type": "text/plain",
+          "title": "LLM-oriented documentation index"
+        }
+      ]
+    },
+    {
+      "anchor": "https://03de9872-58ee-48b3-be11-a2103412dce4.search.ai.cloudflare.com/mcp",
+      "service-doc": [
+        {
+          "href": "https://chaosnexus.ai/guide/ai-agents",
+          "type": "text/html",
+          "title": "ChaosNexus docs AI Search MCP (agent guide)"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://chaosnexus.ai/llms.txt",
+          "type": "text/plain",
+          "title": "LLM-oriented documentation index"
+        },
+        {
+          "href": "https://chaosnexus.ai/.well-known/mcp/server-card.json",
+          "type": "application/json",
+          "title": "MCP Server Card (SEP-1649 / SEP-2127 discovery)"
+        }
+      ]
+    },
+    {
+      "anchor": "https://chaosnexus.ai/",
+      "service-doc": [
+        {
+          "href": "https://chaosnexus.ai/guide/",
+          "type": "text/html",
+          "title": "ChaosNexus documentation guide"
+        },
+        {
+          "href": "https://chaosnexus.ai/guide/ai-agents",
+          "type": "text/html",
+          "title": "AI agent discovery and licensing notes"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://chaosnexus.ai/llms.txt",
+          "type": "text/plain",
+          "title": "LLM-oriented documentation index"
+        },
+        {
+          "href": "https://chaosnexus.ai/llms-full.txt",
+          "type": "text/plain",
+          "title": "Full documentation dump for LLMs"
+        },
+        {
+          "href": "https://chaosnexus.ai/.well-known/agent-index.json",
+          "type": "application/json",
+          "title": "DNS-AID HTTP agent index"
+        },
+        {
+          "href": "https://chaosnexus.ai/.well-known/agent-card.json",
+          "type": "application/json",
+          "title": "ChaosNexus docs-search agent card"
+        },
+        {
+          "href": "https://chaosnexus.ai/.well-known/mcp/server-card.json",
+          "type": "application/json",
+          "title": "MCP Server Card (SEP-1649 / SEP-2127 discovery)"
+        },
+        {
+          "href": "https://chaosnexus.ai/.well-known/agent-skills/index.json",
+          "type": "application/json",
+          "title": "Agent Skills discovery index (RFC v0.2.0)"
+        },
+        {
+          "href": "https://chaosnexus.ai/.well-known/http-message-signatures-directory",
+          "type": "application/http-message-signatures-directory+json",
+          "title": "Web Bot Auth HTTP Message Signatures directory"
+        },
+        {
+          "href": "https://chaosnexus.ai/.well-known/oauth-protected-resource",
+          "type": "application/json",
+          "title": "OAuth Protected Resource Metadata (RFC 9728)"
+        },
+        {
+          "href": "https://chaosnexus.ai/auth.md",
+          "type": "text/markdown",
+          "title": "Agent authentication (auth.md)"
+        }
+      ],
+      "license": [
+        {
+          "href": "https://chaosnexus.ai/guide/licensing",
+          "type": "text/html",
+          "title": "AGPL-3.0-or-later and contributor dual-license grant"
+        }
+      ]
+    }
+  ]
+}

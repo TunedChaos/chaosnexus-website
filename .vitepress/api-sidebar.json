@@ -1,0 +1,256 @@
+[
+  {
+    "text": "global module",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "assert",
+        "link": "/api/rhai/index#assert"
+      },
+      {
+        "text": "base64_decode",
+        "link": "/api/rhai/index#base64_decode"
+      },
+      {
+        "text": "base64_encode",
+        "link": "/api/rhai/index#base64_encode"
+      },
+      {
+        "text": "call_native",
+        "link": "/api/rhai/index#call_native"
+      },
+      {
+        "text": "create_event",
+        "link": "/api/rhai/index#create_event"
+      },
+      {
+        "text": "create_timer",
+        "link": "/api/rhai/index#create_timer"
+      },
+      {
+        "text": "db_connect",
+        "link": "/api/rhai/index#db_connect"
+      },
+      {
+        "text": "db_execute",
+        "link": "/api/rhai/index#db_execute"
+      },
+      {
+        "text": "db_query",
+        "link": "/api/rhai/index#db_query"
+      },
+      {
+        "text": "fire_event",
+        "link": "/api/rhai/index#fire_event"
+      },
+      {
+        "text": "from_json",
+        "link": "/api/rhai/index#from_json"
+      },
+      {
+        "text": "fs_append",
+        "link": "/api/rhai/index#fs_append"
+      },
+      {
+        "text": "fs_delete",
+        "link": "/api/rhai/index#fs_delete"
+      },
+      {
+        "text": "fs_exists",
+        "link": "/api/rhai/index#fs_exists"
+      },
+      {
+        "text": "fs_list_dir",
+        "link": "/api/rhai/index#fs_list_dir"
+      },
+      {
+        "text": "fs_read",
+        "link": "/api/rhai/index#fs_read"
+      },
+      {
+        "text": "fs_write",
+        "link": "/api/rhai/index#fs_write"
+      },
+      {
+        "text": "get_cvar",
+        "link": "/api/rhai/index#get_cvar"
+      },
+      {
+        "text": "get_env",
+        "link": "/api/rhai/index#get_env"
+      },
+      {
+        "text": "get_global",
+        "link": "/api/rhai/index#get_global"
+      },
+      {
+        "text": "hmac_sha256",
+        "link": "/api/rhai/index#hmac_sha256"
+      },
+      {
+        "text": "hook_event",
+        "link": "/api/rhai/index#hook_event"
+      },
+      {
+        "text": "http_get",
+        "link": "/api/rhai/index#http_get"
+      },
+      {
+        "text": "http_post",
+        "link": "/api/rhai/index#http_post"
+      },
+      {
+        "text": "json_extract",
+        "link": "/api/rhai/index#json_extract"
+      },
+      {
+        "text": "kv_dump",
+        "link": "/api/rhai/index#kv_dump"
+      },
+      {
+        "text": "kv_get",
+        "link": "/api/rhai/index#kv_get"
+      },
+      {
+        "text": "kv_set",
+        "link": "/api/rhai/index#kv_set"
+      },
+      {
+        "text": "load_config",
+        "link": "/api/rhai/index#load_config"
+      },
+      {
+        "text": "load_config_string",
+        "link": "/api/rhai/index#load_config_string"
+      },
+      {
+        "text": "log_debug",
+        "link": "/api/rhai/index#log_debug"
+      },
+      {
+        "text": "log_error",
+        "link": "/api/rhai/index#log_error"
+      },
+      {
+        "text": "log_info",
+        "link": "/api/rhai/index#log_info"
+      },
+      {
+        "text": "mcp_call_tool",
+        "link": "/api/rhai/index#mcp_call_tool"
+      },
+      {
+        "text": "mcp_connect",
+        "link": "/api/rhai/index#mcp_connect"
+      },
+      {
+        "text": "mcp_disconnect",
+        "link": "/api/rhai/index#mcp_disconnect"
+      },
+      {
+        "text": "mcp_list_tools",
+        "link": "/api/rhai/index#mcp_list_tools"
+      },
+      {
+        "text": "mcp_log",
+        "link": "/api/rhai/index#mcp_log"
+      },
+      {
+        "text": "mcp_read_resource",
+        "link": "/api/rhai/index#mcp_read_resource"
+      },
+      {
+        "text": "md5",
+        "link": "/api/rhai/index#md5"
+      },
+      {
+        "text": "ntp_request",
+        "link": "/api/rhai/index#ntp_request"
+      },
+      {
+        "text": "regex_match",
+        "link": "/api/rhai/index#regex_match"
+      },
+      {
+        "text": "regex_replace",
+        "link": "/api/rhai/index#regex_replace"
+      },
+      {
+        "text": "register_cvar",
+        "link": "/api/rhai/index#register_cvar"
+      },
+      {
+        "text": "register_mcp_prompt",
+        "link": "/api/rhai/index#register_mcp_prompt"
+      },
+      {
+        "text": "register_mcp_resource",
+        "link": "/api/rhai/index#register_mcp_resource"
+      },
+      {
+        "text": "register_mcp_tool",
+        "link": "/api/rhai/index#register_mcp_tool"
+      },
+      {
+        "text": "register_native",
+        "link": "/api/rhai/index#register_native"
+      },
+      {
+        "text": "route_webhook",
+        "link": "/api/rhai/index#route_webhook"
+      },
+      {
+        "text": "run_command",
+        "link": "/api/rhai/index#run_command"
+      },
+      {
+        "text": "set_global",
+        "link": "/api/rhai/index#set_global"
+      },
+      {
+        "text": "sha256",
+        "link": "/api/rhai/index#sha256"
+      },
+      {
+        "text": "sleep",
+        "link": "/api/rhai/index#sleep"
+      },
+      {
+        "text": "start_webhook_server",
+        "link": "/api/rhai/index#start_webhook_server"
+      },
+      {
+        "text": "sys_install_plugin",
+        "link": "/api/rhai/index#sys_install_plugin"
+      },
+      {
+        "text": "sys_os",
+        "link": "/api/rhai/index#sys_os"
+      },
+      {
+        "text": "system_time",
+        "link": "/api/rhai/index#system_time"
+      },
+      {
+        "text": "tcp_request",
+        "link": "/api/rhai/index#tcp_request"
+      },
+      {
+        "text": "to_json",
+        "link": "/api/rhai/index#to_json"
+      },
+      {
+        "text": "translate",
+        "link": "/api/rhai/index#translate"
+      },
+      {
+        "text": "ws_close",
+        "link": "/api/rhai/index#ws_close"
+      },
+      {
+        "text": "ws_connect",
+        "link": "/api/rhai/index#ws_connect"
+      }
+    ]
+  }
+]
